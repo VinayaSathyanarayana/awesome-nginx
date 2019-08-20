@@ -2,7 +2,7 @@
 
 
 # Awesome Nginx [![Build Status](https://travis-ci.org/agile6v/awesome-nginx.svg?branch=master)](https://travis-ci.org/agile6v/awesome-nginx) [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
-A curated list of awesome nginx distributions、third modules、active developers and so forth.
+A curated list of awesome nginx distributions, third party modules, active developers and so forth.
 
 If you want to contribute, please submit a pull request.
 
@@ -12,7 +12,7 @@ Feel free to add your project :)
 # Table of Contents
 * [Well-known Distributions](#well-known-distributions)
 * [Embeddable Scripting Languages](#embeddable-scripting-languages)
-* [Third Modules](#third-modules)
+* [Third Party Modules](#third-party-modules)
 	* [C Modules](#c-modules)
 	* [Lua Modules](#lua-modules)
 * [Built-in Modules](#built-in-modules)
@@ -32,12 +32,13 @@ Feel free to add your project :)
 * [perl](http://nginx.org/en/docs/http/ngx_http_perl_module.html)
 * [mruby](https://github.com/matsumoto-r/ngx_mruby)
 * [clojure](https://github.com/nginx-clojure/nginx-clojure)
+* [php](https://github.com/rryqszq4/ngx_php)
 
 ## Builder
 This is bash command line builder that uses this curated list to automate installing and compiling nginx
 * [nginx-builder](https://github.com/gp187/nginx-builder)
 
-## Third Modules
+## Third Party Modules
 These modules are not distributed with the Nginx source.
 
 
@@ -113,7 +114,7 @@ These modules are not distributed with the Nginx source.
 * [nginx-hmux-module](https://github.com/wangbin579/nginx-hmux-module) - The module implements resin's hmux protocol in nginx. 
 * [nginx_ocsp_proxy-module](https://github.com/kyprizel/nginx_ocsp_proxy-module) - Nginx OCSP processing module designed for response caching. 
 * [nginx-hmac-secure-link](https://github.com/nginx-modules/nginx-hmac-secure-link) - Alternative Nginx secure link module with support for MD5, SHA-1, and SHA-2 hashes. 
-* [waf-nginx-module](https://github.com/hnlq715/waf-nginx-module) - A lightweight web application firewall module for nginx.. 
+* [waf-nginx-module](https://github.com/gsdu8g9/waf-nginx-module) - A lightweight web application firewall module for nginx.. 
 * [ngx-gm-filter](https://github.com/liseen/ngx-gm-filter) - Another image filter based GraphicsMagick.. 
 * [nginx-mod-so](https://github.com/hamano/nginx-mod-so) - nginx_mod_so is dynamic loadable module for Nginx. 
 * [nginx-auth-ldap](https://github.com/kvspb/nginx-auth-ldap) - LDAP authentication module for nginx. 
@@ -137,6 +138,15 @@ These modules are not distributed with the Nginx source.
 * [ngx_http_avatars_gen_module](https://github.com/dizballanze/ngx_http_avatars_gen_module) - Nginx module for on-the-fly generating of avatars based on user initials.
 * [ngx_http_proxy_connect_module](https://github.com/chobits/ngx_http_proxy_connect_module) - A forward proxy module for CONNECT request handling
 * [modjpeg-nginx](https://github.com/ioppermann/modjpeg-nginx) - Filter module for adding overlays and logos to JPEGs on-the-fly without degrading the quality of the image.
+* [nginx-c-function](https://github.com/Taymindis/nginx-c-function) - It is a NGINX module that allow you to link your .so(c/c++) application in server context and call the function of .so application in location directive.
+* [ngx_lfqueue](https://github.com/Taymindis/ngx_lfqueue) - a lock free queue(enq/deq) container running on nginx share memory and it enqueue/dequeue the messages across multiple threads and multiple workers without any locking.
+* [ngx_lfstack](https://github.com/Taymindis/ngx_lfstack) - a lock free stack(push/pop) container running on nginx share memory and it push/pop the messages across multiple threads and multiple workers without any locking.
+* [ngx-stomp](https://github.com/Taymindis/ngx-stomp) - A STOMP upstream module on nginx, STOMP is the Simple (or Streaming) Text Orientated Messaging Protocol.
+* [nginx-elastic-client](https://github.com/Taymindis/nginx-elastic-client) - To structure your elastic client command in your nginx proxy for multiple elasticsearch server.
+* [zstd-nginx-module](https://github.com/tokers/zstd-nginx-module) - Nginx modules for the Zstandard compression.
+* [nginx_upstream_check_module](https://github.com/yaoweibin/nginx_upstream_check_module) - Health checks upstreams for nginx.
+* [ngx_php](https://github.com/rryqszq4/ngx_php) - Embedded php script language for nginx-module.
+* [ngx_http_guess_mime_module](https://github.com/ohnx/nginx-guess-mime) - Guess the MIME type of files served using libmagic.
 
 
 ### Lua Modules
@@ -243,6 +253,7 @@ For more details, see [nginx.org](http://nginx.org/en/docs/).
 * [nginx-opentracing](https://github.com/opentracing-contrib/nginx-opentracing) - NGINX plugin for OpenTracing.
 * [nixy](https://github.com/martensson/nixy) - Nginx auto configuration and service discovery for Mesos/Marathon
 * [build-nginx](https://github.com/jaygooby/build-nginx) - An nginx build tool to really simplify downloading and building specific versions of nginx with different core and 3rd-party modules.
+* [nginx-autoinstall](https://github.com/angristan/nginx-autoinstall) - Compile Nginx from source with custom modules on Debian and Ubuntu
 
 ## Tutorials
 * [Nginx admin guide](https://www.nginx.com/resources/admin-guide/) - Nginx and nginx plus admin guide. 
@@ -285,3 +296,4 @@ For more details, see [nginx.org](http://nginx.org/en/docs/).
 * [Wandenberg Peixoto](https://github.com/wandenberg)
 * [Joshua Zhu](https://github.com/zhuzhaoyuan)
 * [Simpl](https://github.com/simpl)
+* [Taymindis](https://github.com/Taymindis)
